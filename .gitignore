@@ -1,0 +1,16 @@
+# Environments & Secrets
+.env
+.env.*
+
+# Python & IDE
+__pycache__/
+*.py[cod]
+.venv/
+.vscode/
+
+# Claude Code internal state (DO NOT IGNORE .claude/rules)
+.claude/history/
+.claude/sessions/
+
+# Mock Data
+/data/raw_private/
