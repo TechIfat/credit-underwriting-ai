@@ -1,0 +1,20 @@
+CONFIDENTIAL - COMMERCIAL LOAN APPLICATION
+Entity: Wayne Enterprises Ltd
+Company Number: 01234567
+Requested Loan Amount: £5,000,000
+Purpose: R&D Facility Expansion in Gotham Park.
+
+FINANCIAL SUMMARY (2026)
+Total Revenue: £45,200,000
+Cost of Goods Sold (COGS): £12,100,000
+Operating Expenses: £8,400,000
+Net Income: £24,700,000
+
+CURRENT LIABILITIES
+Existing Bank Debt: £3,200,000
+Accounts Payable: £1,500,000
+Annual Debt Service (Principal + Interest): £850,000
+
+DIRECTOR HISTORY
+Bruce Wayne (CEO) - Appointed 2015. No prior bankruptcies. 
+Lucius Fox (CFO) - Appointed 2018.
