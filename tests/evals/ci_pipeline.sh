@@ -14,7 +14,7 @@ echo "2. Invoking Claude Code (Headless Judge)..."
 
 # EXAM CONCEPT: -p sends a single prompt. --bare removes all UI formatting.
 # Notice we are passing the API key directly to the process to bypass OAuth
-JUDGE_RESULT=$(ANTHROPIC_API_KEY=$ANTHROPIC_API_KEY claude -p "Read tests/evals/temp_output.txt. Verify that the JSON contains 'Wayne Enterprises Ltd' and the 'requested_loan_amount' is exactly 5000000. If both are true, output exactly the word 'PASS'. Otherwise, output 'FAIL'." --bare)
+JUDGE_RESULT=$(ANTHROPIC_API_KEY=$ANTHROPIC_API_KEY npx -y @anthropic-ai/claude-code -p "Read tests/evals/temp_output.txt. Verify that the JSON contains 'Wayne Enterprises Ltd' and the 'requested_loan_amount' is exactly 5000000. If both are true, output exactly the word 'PASS'. Otherwise, output 'FAIL'." --bare)
 
 echo "----------------------------------------"
 echo "⚖️  JUDGE VERDICT: $JUDGE_RESULT"
