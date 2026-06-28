@@ -1,0 +1,20 @@
+services:
+  credit-underwriting-ai:
+    image: shiftai-credit-underwriting:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env_file:
+      # Copy .env.example → .env, add your ANTHROPIC_API_KEY, then run:
+      # docker compose up
+      - .env
+    volumes:
+      # Drop your financial document into ./input/ before running.
+      # Supported formats: .txt, .md, .jpg, .jpeg, .png, .gif, .webp
+      - ./input:/app/input:ro
+
+      # Credit decision JSON packets are written here after each run.
+      - ./output:/app/output:rw
+    restart: "no"
+    # To pass a specific file rather than auto-scanning ./input/:
+    # command: ["--input", "/app/input/my-document.txt"]

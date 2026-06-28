@@ -1,0 +1,54 @@
+# Version control
+.git
+.gitignore
+.gitattributes
+
+# Python artefacts
+__pycache__
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info
+dist/
+build/
+.eggs/
+
+# Virtual environments — rebuilt inside the image
+.venv
+venv
+env
+
+# Secrets — never bake credentials into the image
+.env
+.env.*
+!.env.example
+
+# Development tools
+.ruff_cache
+.mypy_cache
+.pytest_cache
+.coverage
+htmlcov/
+
+# Test data (mount as a volume at runtime instead)
+tests/
+data/
+
+# Documentation (except the deployment guide)
+*.md
+!DEPLOYMENT.md
+
+# CI/CD and IDE artefacts
+.github/
+.gitlab-ci.yml
+.vscode/
+.idea/
+.claude/
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# Input/output volume directories — contents are mounted, not copied
+input/
+output/

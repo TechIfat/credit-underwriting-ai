@@ -14,3 +14,7 @@ __pycache__/
 
 # Mock Data
 /data/raw_private/
+
+# Mac OS System Files (The Global Kill Switch)
+.DS_Store
+**/.DS_Store
